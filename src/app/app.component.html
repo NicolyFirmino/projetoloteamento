@@ -1,19 +1,22 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-tp bg-primary">
-  <a class="navbar-brand" href="#">Modelo Empreendimento</a>
-  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expamded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+  <ul class="nav nav-pills flex-column">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/dashboard" routherLinkActive="active">Dashboard</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/categories" routherLinkActive="active">Categorias de produtos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/products" routherLinkActive="active">Produtos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/orders" routherLinkActive="active">Pedidos</a>
+    </li>
+    <Li class="nav-item">
+      <button class="btn btn-link nav-link">Sair</button>
+    </Li>
+  </ul>
+
 
 </nav>
-
-<div class="container-fluid">
-  <div class="row">
-    <app-side-menu *ngIf="userAuthenticated"></app-side-menu>
-    <main class="col-12 pt-5 pb-5" role="main">
-      <div [ngClass]="{ 'col-sm-9 col-md-10 ml-sm-auto': userAuthenticated, 'mix-auto col-sm-12 col-md-4': !userAuthenticated }">
-        <router-outlet></router-outlet>
-        <toaster-container></toaster-container>
-      </div>
-    </main>
-  </div>
-</div>
