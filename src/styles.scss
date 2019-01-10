@@ -1,0 +1,11 @@
+$theme-color: (
+  "primary": #1D3557,
+  "secondary": #457B9D,
+  "danger": #e63946,
+  "light": #f1faee,
+  "dark": #0f0f0f,
+  "success": #00a65a,
+  "warning": #f39c12
+);
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/angular2-toaster/toaster";
